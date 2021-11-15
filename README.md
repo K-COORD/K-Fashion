@@ -1,13 +1,13 @@
 # K-Fashion Dataset Playground
 
 ## Example Image
-![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/100026.jpg?raw=true)
-![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/1070263.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/examples/100026.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/examples/1070263.jpg?raw=true)
 
 ## Example Image with boxes
 
-![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/100026_box.jpg?raw=true)
-![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/1070263_box.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/examples/100026_box.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/examples/1070263_box.jpg?raw=true)
 
 ## Example Extracted Simplified Annotation
 
