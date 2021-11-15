@@ -1,17 +1,17 @@
 # K-Fashion Dataset Playground
 
 ## Example Image
-![alt text](https://github.com/codeandproduce/k-fashion-dataset/blob/master/100026.jpg?raw=true)
-![alt text](https://github.com/codeandproduce/k-fashion-dataset/blob/master/1070263.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/100026.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/1070263.jpg?raw=true)
 
 ## Example Image with boxes
 
-![alt text](https://github.com/codeandproduce/k-fashion-dataset/blob/master/100026_box.jpg?raw=true)
-![alt text](https://github.com/codeandproduce/k-fashion-dataset/blob/master/1070263_box.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/100026_box.jpg?raw=true)
+![alt text](https://github.com/codeandproduce/K-Fashion-Dataset/blob/master/1070263_box.jpg?raw=true)
 
 ## Example Extracted Simplified Annotation
 
-```
+```json
 {
     "ID": 100026,
     "overall_style": [
@@ -72,6 +72,8 @@
     ]
 }
 ```
+
+```json
 {
     "ID": 1070263,
     "overall_style": [
