@@ -371,12 +371,12 @@ for key in attributes_dict.keys():
     gt_attr = attributes_dict[key]
     # print("gt_attr", gt_attr.size())
     if len(gt_attr.size()) == 2:
-        # single-label loss
+        # multi-label loss
         sig = F.sigmoid(attributes_logits[key])
         one_attr_loss = F.binary_cross_entropy(sig, gt_attr)
         attribute_loss_collect.append(one_attr_loss)
     elif len(gt_attr.size()) == 1:
-        # multi-label loss
+        # single-label loss
         one_attr_loss = F.cross_entropy(attributes_logits[key], gt_attr)
         attribute_loss_collect.append(one_attr_loss)
 

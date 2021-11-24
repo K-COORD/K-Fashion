@@ -6,4 +6,6 @@ ckpt/
 ckpt2/
 dump/
 datasets/
+models/*
+!models/attributercnn.py
 __pycache__

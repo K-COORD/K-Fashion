@@ -266,7 +266,7 @@ class KFashionDataset(Dataset):
         if train:
             json_files = list(glob.glob(data_root + "Training/*/*.json"))
         else:
-            json_files = list(glob.glob(data_root + "Validation/*/*.json"))[:100]
+            json_files = list(glob.glob(data_root + "Validation/*/*.json"))
 
         images = []
         dataset = []
@@ -276,8 +276,6 @@ class KFashionDataset(Dataset):
             jopen.close()
 
             extracted = extract_data(full_data)
-            print("extracted")
-            print(json.dumps(extracted, ensure_ascii=False,indent=4,))
             if extracted is not None:
                 processed = extract_to_onehot(extracted)
 
@@ -374,18 +372,18 @@ def load_data(train, batch_size=16, num_workers=0, data_root="./"):
     dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers, collate_fn=collate_fn)
     return dataloader
 
-dataloader = load_data(train=False, batch_size=2, num_workers=0, data_root="./")
-for batch in dataloader:
-    images, targets, idxs = batch
+# dataloader = load_data(train=False, batch_size=2, num_workers=0, data_root="./")
+# for batch in dataloader:
+#     images, targets, idxs = batch
 
-    for idx, (image, target) in enumerate(zip(images, targets)):
-        # print("box", target["boxes"][0])
-        saveimg_bbox(image, f"examples/{idx}_bboxed.jpg", target["boxes"][0])
-    print(batch)
+#     for idx, (image, target) in enumerate(zip(images, targets)):
+#         # print("box", target["boxes"][0])
+#         saveimg_bbox(image, f"examples/{idx}_bboxed.jpg", target["boxes"][0])
+#     print(batch)
 
-    # print(json.dumps(targets, ensure_ascii=False,indent=4, ))
-    # print(batch)
-    break
+#     # print(json.dumps(targets, ensure_ascii=False,indent=4, ))
+#     # print(batch)
+#     break
 
 
 

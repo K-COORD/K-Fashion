@@ -9,7 +9,7 @@ from torchvision import transforms
 
 import utils
 import transform as T
-from utils.tensorboard import SummaryWriter
+from torch.utils.tensorboard import SummaryWriter
 from models.attributercnn import matchrcnn_resnet50_fpn
 from dataset import load_data, CLOTHING_CATEGORIES, MATERIAL_CATEGORIES, SLEEVE_CATEGORIES, SHIRT_SLEEVES, NECKLINE_CATEGORIES, COLLAR_CATEGORIES, FIT_CATEGORIES
 
@@ -183,7 +183,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Match R-CNN Training")
     parser.add_argument("--local_rank", type=int, default=0)
     parser.add_argument("--gpus", type=str, default="0")
-    parser.add_argument("--n_workers", type=int, default=8)
+    parser.add_argument("--n_workers", type=int, default=1)
 
     parser.add_argument("--batch_size", type=int, default=20)
     parser.add_argument("--root_train", type=str, default='data/deepfashion2/validation/image')
