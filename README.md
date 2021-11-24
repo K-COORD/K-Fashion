@@ -59,6 +59,7 @@ Example 1             |  Example 2
 
 <details><summary>과한 길이로 인하여 숨겨짐</summary>
 <p>
+
 ```json
 {
     "이미지 정보": {
@@ -262,6 +263,7 @@ Example 1             |  Example 2
     }
 }
 ```
+
 </p>
 </details>
 
