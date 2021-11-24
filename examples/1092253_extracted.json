@@ -19,17 +19,38 @@
             613.5011
         ]
     ],
-    "clothing_labels": [
+    "labels": [
         "하의",
         "상의"
     ],
-    "style_labels": [
-        {
-            "색상": "베이지"
-        },
-        {
-            "색상": "그레이",
-            "소매기장": "반팔"
-        }
-    ]
+    "attributes": {
+        "material_categories": [
+            0,
+            0
+        ],
+        "fit_categories": [
+            0,
+            0
+        ],
+        "collar_categories": [
+            0,
+            0
+        ],
+        "neckline_categories": [
+            0,
+            0
+        ],
+        "shirt_sleeve_categories": [
+            0,
+            "반팔"
+        ],
+        "sleeve_categories": [
+            0,
+            0
+        ],
+        "clothing_categories": [
+            0,
+            0
+        ]
+    }
 }

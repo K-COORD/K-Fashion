@@ -1,2 +1,9 @@
 Training
 Validation
+nohup.out
+kcoord/
+ckpt/
+ckpt2/
+dump/
+datasets/
+__pycache__
